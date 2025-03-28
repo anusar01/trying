@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password"
+                    required>
+                <p class="error" id="error-message"></p>
+                <button type="submit">Login</button>
+            </form>
+            <a href="http://localhost:5000/api/auth/google">
+                <button>Login with Google</button>
+            </a>
+
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+        <script src="login.js"></script>
+    </body>
+</html>
